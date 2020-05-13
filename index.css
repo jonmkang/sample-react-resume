@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+    padding: 15px;
+}
+
+header{
+    margin: 0;
+    text-align: center;
+    line-height: 22px;    
+    background-color: rgb(151, 151, 255);
+    padding: 10px;
+}
+
+address{
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    padding: 10px;
+}
+
+section section{
+    padding: 0px;
+}
+
+img{
+    border-radius: 15px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    padding: 5px;
+}
+
+@media screen and (min-width: 540px){
+    .experience{
+        display: flex;
+        flex-direction: row;
+    }
+
+    section section{
+        padding: 10px;
+    }
+}

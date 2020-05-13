@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Reach Hello World </title>
+</head>
+<body>
+    <div id="application-root">
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script type="text/babel">
+            function App(props) {
+                console.log(props)
+                return (
+                    <main>    
+                        {props.children}
+                    </main>
+                );
+            }
+
+            ReactDOM.render(
+                // Add a className to the App
+                <App>
+                    <header>
+                        <h1>Sally Susan</h1>
+                        <img src={"https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg"}></img>
+                        <address>123-456-7890</address>
+                        <a href={"mailto:SallySusan@gmail.com"} target={"_blank"} title={"Send an email to Sally Susan"}>SallySusan@gmail.com</a>
+                    </header>
+                    <h1>Work Experience</h1>
+                    <section class="experience">
+                        <section>
+                            
+                            <h2>Sen Sakana</h2>
+                            <p>Bartender ----- Employed: Sept. 2019 to present</p> 
+                            <p>Job Duties:</p>
+                            <ul>
+                                <li>Create cocktails</li>
+                                <li>Handle petty cash</li>
+                                <li>Serve Cocktails and provide entertainment</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h2>Sumiao Hunan Kitchen</h2>
+                            <p>Server ----- Employed: Sept. 2018 to August 2019</p>
+                            <p>Job Duties:</p>
+                            <ul>
+                                <li>Take food orders and recommend dishes</li>
+                                <li>Handle petty cash</li>
+                                <li>Serve food</li>
+                            </ul>
+                        </section>
+                    </section>
+
+                    <section>
+                        <h3>Education: Boston University - 2016</h3>
+                    </section>
+
+                    <footer>© 2020 Sally Susan Resume</footer>
+                    
+                </App>,
+                document.querySelector('#application-root')
+            );
+        </script>
+    </div>
+</body>
+</html>
